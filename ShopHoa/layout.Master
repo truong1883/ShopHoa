@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.master.cs" Inherits="ShopHoa.layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Shop Hoa</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="XemHoa.aspx">Xem Hoa <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ThemHoa.aspx">Thêm Hoa</a>
+      </li>
+      
+     <li class="nav-item">
+        <a class="nav-link" href="TraCuu.aspx">Tra Cứu</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+        <div style="min-height:500px" class="container mt-3">
+            <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+    
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="bg-secondary text-center text-white" >
+            Sinh Viên thực hiện :2221160040 - huỳnh Văn Trương
+        </div>
+    </form>
+</body>
+</html>
